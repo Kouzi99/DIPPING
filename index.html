@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tobacco Dipping Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tobacco Dipping Tracker</h1>
+        <form id="tracking-form">
+            <label for="quit-date">Quit Date:</label>
+            <input type="date" id="quit-date" required>
+
+            <label for="dip-per-day">Dips Per Day:</label>
+            <input type="number" id="dip-per-day" required>
+
+            <label for="dips-in-pack">Amount of Dips in One Pack:</label>
+            <input type="number" id="dips-in-pack" required>
+
+            <label for="pack-price">Price for One Pack:</label>
+            <input type="number" id="pack-price" required>
+
+            <button type="submit" class="button-54" role="button">Start Tracking</button>
+        </form>
+
+        <div id="results" class="wynik" style="display: none;">
+            <h2>Your Progress</h2>
+            <p>Days without dipping: <span id="days-without-dipping"></span></p>
+            <p>Dips saved: <span id="dips-saved"></span></p>
+            <p>Money saved: Kč<span id="money-saved"></span></p>
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
